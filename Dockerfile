@@ -26,7 +26,7 @@ RUN mkdir -p /workspace/pkg
 RUN mkdir -p /usr/local/go
 RUN cd /usr/local/go
 
-RUN hg clone https://code.google.com/p/go -r release-branch.go1.2 /usr/local/go
+RUN hg clone https://code.google.com/p/go -r release-branch.go1.3 /usr/local/go
 RUN cd /usr/local/go/src && bash -c './all.bash'
 
 # env
